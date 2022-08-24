@@ -34,6 +34,14 @@ python -m pip install -–upgrade pip.
 pip install -r requirements.txt
 ```
 
+Необходимо изменить ключи в файле .evn.example и переименовать файл в .evn:
+```
+FLASK_APP=opinions_app
+FLASK_ENV=development #  or production
+DATABASE_URI=sqlite:///db.sqlite3
+SECRET_KEY=you_secret_key # можно использовать в settings.py - **os.urandom(20).hex()**
+```
+
 Функция загрузки мнений в базу данных из **opinions.csv**:
 
 ```

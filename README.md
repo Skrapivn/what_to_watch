@@ -3,7 +3,7 @@
 Клонировать репозиторий и перейти в него в командной строке:
 
 ```
-git clone 
+git clone https://github.com/Skrapivn/what_to_watch.git
 ```
 
 ```
@@ -12,27 +12,32 @@ cd what_to_watch
 
 Cоздать и активировать виртуальное окружение:
 
-```
-python3 -m venv venv
+```python
+python -m venv venv
 ```
 
-```
+```python
 source venv/bin/activate
 ```
-или для пользователей Windows
 
-```
-source env/Scripts/activate
-```
+Активировать виртуальное окружение, обновить версию ```pip``` и установить зависимости из ```requirements.txt```:
 
-Установить зависимости из файла requirements.txt:
-
-```
-python3 -m pip install --upgrade pip
+```python
+source venv/bin/activate
 ```
 
+```python
+python -m pip install -–upgrade pip.
 ```
+
+```python
 pip install -r requirements.txt
+```
+
+Функция загрузки мнений в базу данных из **opinions.csv**:
+
+```
+flask load_opinions  
 ```
 
 Запустить проект:
@@ -40,3 +45,5 @@ pip install -r requirements.txt
 ```
 flask run
 ```
+
+[Sergey K.](https://github.com/skrapivn/)

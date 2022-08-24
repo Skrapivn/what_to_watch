@@ -23,10 +23,6 @@ class Opinion(db.Model):
         )
     
     def from_dict(self, data):
-        # Для каждого поля модели, которое можно заполнить...
         for field in ['title', 'text', 'source', 'added_by']:
-            # ...выполняется проверка: есть ли ключ с таким же именем в словаре
             if field in data:
-                # Если есть — добавляем значение из словаря
-                # в соответствующее поле объекта модели:
                 setattr(self, field, data[field])

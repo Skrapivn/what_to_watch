@@ -34,7 +34,7 @@ python -m pip install -–upgrade pip.
 pip install -r requirements.txt
 ```
 
-Необходимо изменить ключи в файле .evn.example и переименовать файл в .evn:
+Необходимо изменить ключи в файле .env.example и переименовать файл в .env:
 ```
 FLASK_APP=opinions_app
 FLASK_ENV=development #  or production
